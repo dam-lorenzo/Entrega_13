@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-inverse" id='navBar'>
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li class="active"><a href="resultados.html">Ver resultados</a></li>
+              <li><a href="prueba.html" >Agregar resultados</a></li>
+              <li style="background-color: #3a2020;"><a href="#" >Actualizar posiciones</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#" onclick="commingSoon()"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Buscar resultados</h1>
+            <p class="">Elija nombre y fecha para buscar los resultados cargados</p>
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="player">Nombre</label>
+                    <select type="text" class="form-control" id="player" style="max-width: 160px;">
+                        <option value="0">Elija una nombre</option>
+                        <option value="pepe">don PEPE</option>
+                    </select>
+                    </div>
+                <div class="form-group">
+                    <label for="date">Fecha</label>
+                    <select type="number" class="form-control" id="date" maxlength="2" style="max-width: 60px;">
+                        <option value="0">...</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                </div>
+                <button type="button" class="btn btn-default" id='searchButton'>Buscar</button>
+            </form>
+            <br>
+            <br>
+    </div>
+    <div class="container table-responsive">
+        <table class="table table-striped" id='table' style="display: none">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Local</th>
+                    <th>Resultado</th>
+                    <th>Visitante</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Team Name</td>
+                    <td>0-0</td>
+                    <td>Team Name</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Team Name</td>
+                    <td>0-0</td>
+                    <td>Team Name</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Team Name</td>
+                    <td>0-0</td>
+                    <td>Team Name</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Team Name</td>
+                    <td>0-0</td>
+                    <td>Team Name</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Team Name</td>
+                    <td>0-0</td>
+                    <td>Team Name</td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>Team Name</td>
+                    <td>0-0</td>
+                    <td>Team Name</td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>Team Name</td>
+                    <td>0-0</td>
+                    <td>Team Name</td>
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                    <td>Team Name</td>
+                    <td>0-0</td>
+                    <td>Team Name</td>
+                </tr>
+                <tr>
+                    <th scope="row">9</th>
+                    <td>Team Name</td>
+                    <td>0-0</td>
+                    <td>Team Name</td>
+                </tr>
+                <tr>
+                    <th scope="row">10</th>
+                    <td>Team Name</td>
+                    <td>0-0</td>
+                    <td>Team Name</td>
+                </tr>
+                <tr>
+                    <th scope="row">11</th>
+                    <td>Team Name</td>
+                    <td>0-0</td>
+                    <td>Team Name</td>
+                </tr>
+                <tr>
+                    <th scope="row">12</th>
+                    <td>Team Name</td>
+                    <td>0-0</td>
+                    <td>Team Name</td>
+                </tr>
+                <tr>
+                    <th scope="row">13</th>
+                    <td>Team Name</td>
+                    <td>0-0</td>
+                    <td>Team Name</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <br>
+        
+    </div>
+    <br>
+    <footer class="container-fluid text-center fixed-bottom"> 
+        <form class="form-inline">Suscribite:
+        <input type="email" class="form-control" size="50" placeholder="Email Address">
+        <button type="button" class="btn btn-danger" onclick="commingSoon()">Sign Up</button>
+        </form>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
